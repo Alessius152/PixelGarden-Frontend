@@ -1,0 +1,98 @@
+.second-auth {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.second-auth .extend-wrapper {
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+}
+
+.second-auth .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-auth .content .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.second-auth .content .header .subtitle-voice {
+    text-align: center;
+    font-weight: 500;
+}
+
+.second-auth .content .main {
+    padding: 22px;
+    margin-top: 28px;
+}
+
+.second-auth .content .auth-finalization-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-auth .content .auth-finalization-form .profile-picture-selection-box {
+    display: flex;
+}
+
+.second-auth .content .auth-finalization-form .profile-picture-selection-box .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-auth .content .auth-finalization-form .profile-picture-selection-box .left .no-profile-photo-selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-auth .content .auth-finalization-form .profile-picture-selection-box .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.second-auth .content .auth-finalization-form .username-input-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
+    padding-block: 12px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

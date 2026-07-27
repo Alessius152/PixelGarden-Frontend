@@ -1,0 +1,16 @@
+.global-user-search-list-item {
+    background: linear-gradient(156deg, #f29eff91, #3642c562);
+    border: 1px solid rgb(163, 96, 163);
+}
+
+@keyframes friendshipReqSendingBtnOnHover  {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

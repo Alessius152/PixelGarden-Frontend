@@ -1,0 +1,38 @@
+.friends-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends-section .s-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+}
+
+.friends-section .s-header .right {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.friends-section .s-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+
+.friends-section .s-content .list {
+    flex: 1;
+}
+
+.friends-section .s-footer {
+    height: max-content;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}

@@ -1,0 +1,10 @@
+ .friends-topbar-action-btn {
+     height: max-content;
+     padding: 8px;
+     font-size: 12px;
+     border-radius: 12px;
+ }
+
+ .friends-topbar-action-btn.secondary {
+     border: 1px solid #b848d4ff;
+ }

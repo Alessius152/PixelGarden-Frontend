@@ -1,0 +1,16 @@
+.friends-list-card{ 
+    padding: 16px;
+    background-color: #dfb0ffe7;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.friends-list-card.desktop{ 
+    transition: scale 0.2s ease
+}
+.friends-list-card.desktop:hover{
+    scale: 1.05;
+}
+.delete-fr-btn {
+    border-radius: 12px;
+    font-size: 12px;
+}

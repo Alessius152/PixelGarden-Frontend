@@ -1,0 +1,61 @@
+.first-auth {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-auth .extend-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.first-auth .main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-auth .main-wrapper .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-auth .main-wrapper .heading-title .gradient-text {
+    background: linear-gradient(270deg,
+            #01004d,
+            #0d007f,
+            #0c00b3,
+            #000fe0,
+            #1a1eff,
+            #3336ff,
+            #1600e0,
+            #08007f,
+            #05004d
+        );
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 18s ease-in-out infinite;
+    filter: brightness(1.1) contrast(1.2) saturate(1.3);
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.first-auth .main-wrapper .content .provider-login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}

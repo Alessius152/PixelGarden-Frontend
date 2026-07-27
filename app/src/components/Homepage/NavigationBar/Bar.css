@@ -1,0 +1,171 @@
+
+/*questo file css contiene sia lo stile per l'app desktop e sia lo stile adattato per mobile.*/
+
+.navbar-decorative-username {
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-inline: 24px;
+    padding-block: 12px;
+    position: relative;
+    z-index: 1; 
+}
+
+.homepage .desktop-sb {
+    width: 260px;
+    height: 100%;
+    align-self: stretch;
+    background-color: #ffd5f0;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage .desktop-sb .header {
+    height: 100px;
+    width: 100%;
+    background-image: url('../../../assets/backgrounds/homepage/usernameBack/cherryBranch.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.homepage .desktop-sb .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.homepage .desktop-sb .content {
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 8px;
+}
+.homepage .desktop-sb .footer {
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 198, 240);
+    border-top: 1px solid grey;
+}
+
+.homepage .desktop-sb .footer .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex: 1;
+    word-wrap: break-word;
+}
+
+.homepage .desktop-sb .footer .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.homepage .mobile-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: linear-gradient(90deg, #ffe1f8, #ffd5f0);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.homepage .mobile-topbar .left-part {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    overflow: hidden;
+    padding-right: 32px;
+}
+
+.homepage .mobile-topbar .thin-uname-wrapper {
+    overflow: hidden;
+}
+
+.homepage .mobile-topbar .thin-uname-wrapper p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #4a1f3c;
+}
+
+.mobile-top-drawer .header {
+    height: 200px;
+    background-image: url('../../../assets/backgrounds/homepage/usernameBack/cherryBranch.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mobile-top-drawer .header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.mobile-top-drawer .body {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.mobile-top-drawer .body .location-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mobile-top-drawer .footer .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.mobile-top-drawer .close-trigger {
+    background-color: rgba(85, 85, 85, 0.63);
+    color: rgb(255, 70, 243);
+    border-radius: 4px;
+}
+
+.loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #4a1f3c;
+}

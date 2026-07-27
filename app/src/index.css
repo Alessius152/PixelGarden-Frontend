@@ -1,0 +1,27 @@
+* {
+  font-family: "Inter", sans-serif;
+  scrollbar-width: thin;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Scrollbar per browser WebKit (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: magenta;
+  border-radius: 3px;
+}

@@ -1,0 +1,18 @@
+.rooms-topbar-action-btn {
+    height: max-content;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 12px;
+}
+
+.rooms-topbar-action-btn.secondary {
+    border: 1px solid #a1145b;
+}
+
+.rooms-topbar-action-btn.secondary {
+    background-color: #ffbdde;
+}
+
+.rooms-topbar-action-btn.secondary:hover {
+    background-color: #aa236786;
+}

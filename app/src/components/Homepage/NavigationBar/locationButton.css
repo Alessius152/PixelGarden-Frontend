@@ -1,0 +1,55 @@
+.homepage .desktop-sb .content .location-btn button,
+.mobile-top-drawer .body .location-btns .location-btn button {
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(135deg,
+      #e09adc,
+      #cb4da7,
+      #b616ac);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+
+  border: none;
+  border-radius: 12px;
+
+  transition: transform 0.15s ease;
+}
+
+
+.homepage .desktop-sb .content .location-btn button:hover,
+.mobile-top-drawer .body .location-btns .location-btn button:hover {
+  background-image: linear-gradient(135deg,
+      #73276f,
+      #8b3773,
+      #450841);
+}
+
+.homepage .desktop-sb .content .location-btn button:hover,
+.mobile-top-drawer .body .location-btns .location-btn button:hover {
+  animation: bgflow 3s ease infinite;
+}
+
+.homepage .desktop-sb .content .location-btn.active-btn button,
+.mobile-top-drawer .body .location-btns .location-btn.active-btn button{
+  background: #7e1b7c;
+}
+
+.homepage .desktop-sb .content .location-btn button:active,
+.mobile-top-drawer .body .location-btns .location-btn button:active {
+  transform: scale(0.97);
+}
+
+
+@keyframes bgflow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

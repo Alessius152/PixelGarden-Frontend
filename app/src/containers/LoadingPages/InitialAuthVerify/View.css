@@ -1,0 +1,39 @@
+.initial-auth-loading-view {
+    position: relative;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.initial-auth-loading-view .blur-layer {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.initial-auth-loading-view .central-box {
+    width: 560px;
+    max-width: 90%;
+    height: 400px;
+    padding: 24px;
+    background: rgba(30, 28, 34, 0.85);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.initial-auth-loading-view .central-box .top-text span {
+    background: linear-gradient(90deg, #FFD700, #FF8C00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

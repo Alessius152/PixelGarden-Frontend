@@ -1,0 +1,29 @@
+.rooms-creator-filter-select {
+    scrollbar-width: thin;
+    scrollbar-color: #8B435C #FDEFF4 ; 
+
+    border: 1.5px solid #8B435C;
+    background-color: #FFF5F7;
+    border-radius: 12px;
+    height: min-content;
+    outline: none;
+}
+
+.rooms-creator-filter-select::-webkit-scrollbar {
+    width: 6px; 
+}
+
+.rooms-creator-filter-select::-webkit-scrollbar-track {
+    background: #FDEFF4;
+    border-radius: 10px;
+}
+
+.rooms-creator-filter-select::-webkit-scrollbar-thumb {
+    background-color: #8B435C; 
+    border-radius: 10px;
+    border: 1px solid #FDEFF4;
+}
+
+.rooms-creator-filter-select::-webkit-scrollbar-thumb:hover {
+    background-color: #6D3246;
+}
