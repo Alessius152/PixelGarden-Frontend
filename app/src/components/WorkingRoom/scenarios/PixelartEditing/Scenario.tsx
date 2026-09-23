@@ -70,7 +70,6 @@ function Scenario() {
 
     const toolsSidebar = <ToolsSidebar />
 
-    // Estrazione e memoizzazione delle sole proprietà primitive necessarie
     const syncMetadata = useMemo(() => {
         return {
             width: artData.data?.metadata?.width,
@@ -98,7 +97,6 @@ function Scenario() {
             const ctx = sharedOffscreenCanvas.getContext('2d')
             if (!ctx) return
 
-            // CRUCIALE: Puliamo e disegniamo i pixel correnti prima della compressione
             ctx.clearRect(0, 0, sharedOffscreenCanvas.width, sharedOffscreenCanvas.height)
             ctx.drawImage(layerSnapshot, 0, 0)
 

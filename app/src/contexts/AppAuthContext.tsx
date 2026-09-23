@@ -50,7 +50,7 @@ export const AppAuthProvider = ({ children }: { children: ReactNode }) => {
             else {
                 setClientAuth({ status: 'authenticated', user })
             }
-            // console.log(await user?.getIdToken())
+            console.log(await user?.getIdToken())
         })
         return unsubscribe
     }, [])

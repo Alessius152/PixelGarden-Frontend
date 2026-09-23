@@ -10,7 +10,6 @@ import { DrawingTool } from "../../../utils/enums/artEditing"
 
 type MotionButtonProps = ButtonProps & HTMLMotionProps<"button">
 
-// AGGIORNATO: Incluso lo strumento PAN nell'elenco dei tool ciclabili
 const drawingTools = [DrawingTool.PENCIL, DrawingTool.ERASER, DrawingTool.PAN]
 
 const drawingToolsIcon: Record<DrawingTool, ReactNode> = {

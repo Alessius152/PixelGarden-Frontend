@@ -3,8 +3,6 @@ import { motion, type MotionProps } from "framer-motion"
 import { type ReactNode } from "react"
 import { validateUsernamesFirstLetter } from "../functions/dataValidation"
 
-// --- 1. TIPI E COSTANTI ---
-
 export const colorsPerLetter: Record<string, string> = {
     'a': '#FF6B6B', 'b': '#FF8E72', 'c': '#FFD93D', 'd': '#6BCB77', 'e': '#4D96FF',
     'f': '#843BFF', 'g': '#FF5DA2', 'h': '#00C2A8', 'i': '#FF9F1C', 'j': '#2EC4B6',
@@ -20,9 +18,6 @@ interface RGB {
     b: number;
 }
 
-// --- 2. LOGICA DEL COLORE E CONTRASTO ---
-
-/** Converte HEX in RGB */
 const hexToRgb = (hex: string): RGB => {
     const h = hex.replace('#', '')
     const r = parseInt(h.substring(0, 2), 16)
@@ -31,7 +26,6 @@ const hexToRgb = (hex: string): RGB => {
     return { r, g, b }
 }
 
-/** Calcola la luminanza relativa (WCAG) */
 const getLuminance = (r: number, g: number, b: number): number => {
     const a = [r, g, b].map(v => {
         v /= 255
@@ -40,7 +34,6 @@ const getLuminance = (r: number, g: number, b: number): number => {
     return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722
 }
 
-/** Calcola il rapporto di contrasto tra due colori HEX */
 export const getContrastRatio = (hex1: string, hex2: string): number => {
     const rgb1 = hexToRgb(hex1)
     const rgb2 = hexToRgb(hex2)
@@ -58,7 +51,6 @@ export const getContrastColor = (hexColor: string): 'white' | 'black' => {
     return brightness > 128 ? 'black' : 'white'
 }
 
-/** Genera un colore deterministico basato su un indice (Golden Ratio) */
 export const generateUserColor = (index: number): string => {
     const goldenRatioConjugate = 0.618033988749895
     let h = (index * goldenRatioConjugate) % 1
@@ -75,8 +67,6 @@ export const generateUserColor = (index: number): string => {
     }
     return hslToHex(h * 360, 70, 50)
 }
-
-// --- 3. LOGICA AVATAR E PLACEHOLDER ---
 
 export const profilePicPlaceholderBgColor = (username: string): string => {
     const firstChar = username?.[0]?.toLowerCase()
@@ -114,8 +104,6 @@ export const buildVoidProfilePicture = (username: string, sizePx: number, otherP
     )
 }
 
-// --- 4. COMPONENTI ANIMATI (MOTION) ---
-
 export const MotionBox = motion.create(Box)
 export const MotionText = motion.create(Text)
 export const MotionButton = motion.create(Button)
@@ -123,8 +111,6 @@ export const MotionFlex = motion.create(Flex)
 export const MotionInput = motion.create(Input)
 export const MotionHeading = motion.create(Heading)
 export const MotionTextarea = motion.create(Textarea)
-
-// --- 5. COMPONENTI UI SPECIALI ---
 
 export const buttonWithGrandientOnHover = (
     icon: ReactNode,

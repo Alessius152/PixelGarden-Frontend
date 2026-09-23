@@ -151,9 +151,7 @@ function PixelartTile({ artData }: Props) {
         }
     }, [repaintCanvas])
 
-    // Disegno nativo ultra-veloce (Zero chiamate alla GPU in tempo reale)
     const drawContinuousLine = (x1: number, y1: number, x2: number, y2: number) => {
-        // ---- LOG DI INIZIO CALCOLO LINEA ----
         const tStart = performance.now();
 
         const actCtx = activeLayerCanvasRef.current?.getContext('2d')
@@ -194,7 +192,6 @@ function PixelartTile({ artData }: Props) {
             if (e2 < dx) { err += dx; currY += sy }
         }
 
-        // ---- FINE CALCOLO: Deve stare sotto gli 0.2ms ----
         const tEnd = performance.now();
         console.log(`%c[CPU Line] Tracciati pixel tra (${x1},${y1}) e (${x2},${y2}) in ${(tEnd - tStart).toFixed(2)}ms`, "color: #4CAF50;");
     }
@@ -220,7 +217,6 @@ function PixelartTile({ artData }: Props) {
         bgCtx.clearRect(0, 0, width, height)
         actCtx.clearRect(0, 0, width, height)
 
-        // Reset della bounding box prima del tratto
         bboxRef.current = { minX: cursor.x, minY: cursor.y, maxX: cursor.x, maxY: cursor.y }
 
         for (let i = 0; i < layersToRender.length; i++) {

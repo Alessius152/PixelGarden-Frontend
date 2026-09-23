@@ -11,7 +11,6 @@ const appRoutes = {
             PROFILE: 'profile',
             ROOM_DETAIL: 'rooms/:roomId'
         },
-        // Utility per i link (path assoluti)
         get FRIENDS() { return `${this.ROOT}/${this.SECTIONS.FRIENDS}` },
         get ROOMS() { return `${this.ROOT}/${this.SECTIONS.ROOMS}` },
         get PROFILE() { return `${this.ROOT}/${this.SECTIONS.PROFILE}` },
